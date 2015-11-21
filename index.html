@@ -51,15 +51,17 @@
                     <!-- settings end -->
                     <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <a href="" data-toggle="dropdown" class="dropdown-toggle">
                             <i id = "env"class="fa fa-envelope-o"></i>
+                      
                             <script>
-                            
+                          
 
                             </script>
                             <button onClick= "func()" id = "one" class="badge bg-theme">1</button>
-                        </a>
+                      
                         <script>
+                        </a>
                         function func() {
                         document.getElementById("one").innerHTML="0";
                        }
@@ -70,7 +72,7 @@
                                 <p class="green">You have 1 new message</p>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="temp/about.html" target="_blank">
                                     <span class="photo"><img alt="avatar" src="member1.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Deepak</span>
@@ -88,7 +90,7 @@
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Help</a></li>
+                    <li><a class="logout" href="temp/about.html">Getting Started</a></li>
             	</ul>
             </div>
         </header>
@@ -107,21 +109,13 @@
               	  </p>
               	  	
                   <li class="mt" style = "margin-top:-45px">
-                      <a class="active" href="">
+                      <a class="active" href="index.html">
                           <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                       </a>
                   </li>
 
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
-                          <span>Gallery</span>
-                      </a>
-                      <ul class="sub">
-                          
-                      </ul>
-                  </li>
+                
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
@@ -391,7 +385,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" style = "height : 130px; width : 500px" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" style = "height : 130px; width : 600px" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -569,9 +563,6 @@
 	<script src="assets/js/zabuto_calendar.js"></script>	
 	
 	<script type="text/javascript">
-  function func() {
-                        document.getElementById("one").innerHTML="0";
-                      }
         $(document).ready(function () {
         var unique_id = $.gritter.add({
             // (string | mandatory) the heading of the notification
@@ -626,7 +617,5 @@
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
     </script>
-  
-
   </body>
 </html>
