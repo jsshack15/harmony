@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Moltres- Customize</title>
+  <!-- AngularJS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <!-- Sortable.js -->
+  <script src="Sortable/Sortable.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 leftpanel">
+        <h1>Navbar</h1>
+        <ul id="navbar1">
+          <li id= "postnav" style=" overflow:hidden;"><img src="img/navbar1.png"></img></li><br />
+          <li id= "postnav" style="overflow:hidden"><img  src="img/navbar2.png"></img></li><br />
+          <li id= "postnav" style="overflow:hidden"><img  src="img/navbar3.png"></img></li><br />
+<!--           <li style="overflow:hidden">
+            <div  ng-include="'navbar/html/navbar1.html'">
+            </div>
+
+          </li> -->
+        </ul>
+        <h1>Sidebar Left</h1>
+        <ul id="sidebar1">
+          <li id= "postside" style="overflow:hidden; height:100px;"><img  src="img/sl1.png"></img></li><br />
+          <li id= "postside" style="overflow:hidden; height:100px;"><img  src="img/sl2.png"></img></li>
+          <li id= "postside"style="overflow:hidden; height:100px;"><img  src="img/sl2.png"></img></li>
+        </ul>
+        <h1>Body</h1>
+        <ul id="body1">
+          <li id= "postbod" style="background-color: #a9a9a9">Columns: 2</li>
+          <li id= "postbod" style="background-color: #006400">Columns: 3</li>
+          <li id= "postbod" style="background-color: #000080">Columns: 4</li>
+        </ul>
+        <h1>Footer</h1>
+        <ul id="footer1">
+          <li id= "postfoot" style=" overflow:hidden"><img src="img/footer1.png"></img></li>
+          <li id= "postfoot" style=" overflow:hidden"><img src="img/footer2.png"></img></li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="mainpanel col-md-12">
+            <ul id="navbar2" class="col-md-12">
+            </ul>    
+            <ul id="sidebar2" style="height:100%;" class="col-md-4">
+            </ul>
+            <ul id="body2" class="col-md-8">
+            </ul>
+            <ul id="footer2" class="col-md-12">
+            </ul>
+          </div><br />
+         <div ng-controller="MainCtrl" class="col-md-12">
+          <h1>Generate Code:</h1>
+          <a href="index1.html"><button class="btn">Generate</button></a>
+            <div ng-if="content" class="code1 code2">
+                <pre>{{content}}</pre>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<script src="bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>  
+<script src="custom.js"></script>  
+</body>
+</html>
